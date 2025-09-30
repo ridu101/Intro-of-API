@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #todo-container {
+            max-width: 1200px;
+            margin: 20px auto 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            
+            /* modern syntax for grid-gap */
+        }
+
+        .todo-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 1px 1px gray;
+            background: #fff;
+    
+  
+        }
+
+        .todo-card p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To do List</h1>
+
+    <section id="todo-container">
+        <button onclick="loadTodo()">Load To Do List</button>
+    </section>
+
+
+
+
+
+
+    <script src="./todoScript.js"></script>
+
+</body>
+
+</html>
