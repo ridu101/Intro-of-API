@@ -16,7 +16,7 @@ const displayPost = post => {
 
     const postContainer= document.getElementById('post-container');
     postContainer.innerHTML='';
-    console.log(postContainer)
+    // console.log(postContainer)
 
    for (const singlePost of post){
 
@@ -34,4 +34,4 @@ const displayPost = post => {
    }
 }
 
-loadPost()
+// loadPost()

@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #post-container {
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+            max-width: 1200px;
+            /* enough space for 3 columns */
+            margin-left: auto;
+            margin-right: auto;
+
+            display: grid;
+            /* this enables the grid */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        .post-card {
+            padding: 10px;
+            box-shadow: 2px 2px 10px lightgray;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <h1>User Post</h1>
     <button id="post-btn">Load Post</button>
 
     <div id="post-container">
-        <!-- Post content will be loaded here -->
-         <div class="post-card">
-            <p>Id: 1</p>
-            <p>Name:Ridwan Ahmed</p>
-            <p>email: ridu11650@gmail.com</p>
-            <!-- address div -->
-             <div>
-                <p>Street: c/42, Sayabithi, Savar, Dhaka</p>
-                <p>City: Dhaka</p>
-                <p>District: Dhaka</p>
-             </div>
-            <p>phone: 01308379952</p>
-            <p>Website: www.google.com</p>
-            <!-- company div  -->
-             <div>
-                <p>Name: RA Tech Gainst LTD </p>
-                <p>address: road no: 2, 30/a a, Singair Manikgonj</p>
-             </div>
+       
 
-
-         </div>
     </div>
 
 
@@ -45,6 +55,7 @@
 
 
     <script src="./user-post.js"></script>
-    
+
 </body>
+
 </html>
