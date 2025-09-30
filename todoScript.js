@@ -1,8 +1,9 @@
-const loadTodo= () =>{
+const loadTodo= async () =>{
     const url = 'https://jsonplaceholder.typicode.com/todos'
     fetch(url)
-    .then(res => res.json())
-    .then(data => displayTodos(data))
+    const response = await fetch(url);
+    const todos= await response.json();
+    displayTodos(todos);
 }
 
 const displayTodos = todos =>{
