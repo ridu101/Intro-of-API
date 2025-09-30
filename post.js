@@ -1,48 +1,49 @@
-// post js connected 
-// console.log('post js connected')    
-const loadPost = () => {
+// // post js connected 
+// // console.log('post js connected')    
+// const loadPost = () => {
 
-    const url = 'https://jsonplaceholder.typicode.com/posts#'
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            // console.log(data)
-            displayPost(data)
-        })
+//     const url = 'https://jsonplaceholder.typicode.com/posts#'
+//     fetch(url)
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log(data)
+//             displayPost(data)
+//         })
 
-}
-//  receive the array of post objects
+// }
+// //  receive the array of post objects
 
-const displayPost = post => {
+// const displayPost = post => {
 
-    // 1.Get the container where you want to display the posts
+//     // 1.Get the container where you want to display the posts
 
-    const postContainer = document.getElementById('post-container');
-    // console.log(postContainer)
+//     const postContainer = document.getElementById('post-container');
+//     postContainer.innerHTML = '';
+//     // console.log(postContainer)
 
-    //    using forEach loop
-    post.forEach(post => {
-        // console.log(post.title)
+//     //    using forEach loop
+//     post.forEach(post => {
+//         // console.log(post.title)
 
-        // 2. Create HTML element for each post
+//         // 2. Create HTML element for each post
 
-        const li= document.createElement('li');
-        li.innerHTML=post.title;
-        // console.log(li);
+//         const li= document.createElement('li');
+//         li.innerHTML=post.title;
+//         // console.log(li);
 
-        // 3. Append each post to the container
+//         // 3. Append each post to the container
 
-        postContainer.appendChild(li);
+//         postContainer.appendChild(li);
 
-    })
-    // // using for loop
-    // for ( let i=0; i<post.length; i++){
-    //     console.log(post[i])
-    // }
-    // // using for of loop
-    // for ( const singlePost of post){
-    //     console.log(singlePost)
-    // }
+//     })
+//     // // using for loop
+//     // for ( let i=0; i<post.length; i++){
+//     //     console.log(post[i])
+//     // }
+//     // // using for of loop
+//     // for ( const singlePost of post){
+//     //     console.log(singlePost)
+//     // }
 
 
-}
+// }
