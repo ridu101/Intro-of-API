@@ -11,22 +11,28 @@ const loadPost = () => {
         })
 
 }
+//  receive the array of post objects
 
 const displayPost = post => {
 
-    // 1. display in UI
-    
+    // 1.Get the container where you want to display the posts
 
-
-
-
-
-
-
+    const postContainer = document.getElementById('post-container');
+    // console.log(postContainer)
 
     //    using forEach loop
     post.forEach(post => {
-        console.log(post)
+        // console.log(post.title)
+
+        // 2. Create HTML element for each post
+
+        const li= document.createElement('li');
+        li.innerHTML=post.title;
+        // console.log(li);
+
+        // 3. Append each post to the container
+
+        postContainer.appendChild(li);
 
     })
     // // using for loop
